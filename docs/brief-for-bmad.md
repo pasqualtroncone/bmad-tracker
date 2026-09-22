@@ -56,10 +56,14 @@ commit. It works with any repository that depends on BMAD — it is not built fo
   [--set <module>.<key>=<value>] [--custom-source <path|git-url>]`. `--tools` is required with
   `--yes`. **Shims are off on a fresh install**: `bmad-create-prd`, `bmad-create-story`,
   `bmad-dev-story`, `bmad-sprint-status`, `bmad-generate-project-context` are not installed unless
-  `--shims`. The skills that exist by default are the `plan/` and `build/` families:
-  `bmad-project-context`, `bmad-product-brief`, `bmad-prd`, `bmad-architecture`, `bmad-ux`,
-  `bmad-create-epics-and-stories`, `bmad-sprint-planning`, `bmad-spec`, `bmad-build`,
-  `bmad-build-auto`.
+  `--shims`. The 29 skills a default install places in `.claude/skills/` (verified in this
+  repository): planning `bmad-project-context`, `bmad-product-brief`, `bmad-prd`, `bmad-prfaq`,
+  `bmad-architecture`, `bmad-ux`, `bmad-create-epics-and-stories`, `bmad-sprint-planning`,
+  `bmad-spec`; build `bmad-build`, `bmad-build-auto`, `bmad-code-review`, `bmad-review`,
+  `bmad-qa-generate-e2e-tests`; steering `bmad-correct-course`, `bmad-retrospective`,
+  `bmad-customize`, `bmad-help`, `bmad-walkthrough`; ideation `bmad-brainstorming`,
+  `bmad-forge-idea`, `bmad-deep-recon`, `bmad-advanced-elicitation`, `bmad-party-mode`; and the
+  five `bmad-agent-*` personas.
 - What the installer writes and what is meant to be committed: `_bmad/config.toml` (team answers,
   regenerated each install: commit), `_bmad/custom/` (human-authored `<skill>.toml` overrides, never
   touched by the installer: commit; `*.user.toml` ignored), `_bmad/render/` (rendered skill
