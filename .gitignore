@@ -1,0 +1,56 @@
+# Claude Code session state — local only
+.claude/
+CLAUDE.local.md
+.claude.local.md
+.mcp.json
+
+# BMAD install: generated parts (the committed parts are _bmad/config.toml and _bmad/custom/)
+_bmad/render/
+_bmad/scripts/
+_bmad/_config/
+_bmad/bmm/
+_bmad/core/
+_bmad/*.user.toml
+_bmad/custom/*.user.toml
+
+# Sandboxes and loops run against this checkout
+.ai-jail
+.bmad-loop/
+ci-status.json
+.bmad-ci-handled
+
+# Python and tooling
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Node (BMAD installs through npx)
+node_modules/
+npm-debug.log*
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+*~
+*.orig
+*.rej
+*.bak
+*.tmp
+*.log
+.idea/
+.vscode/
+*.swp
